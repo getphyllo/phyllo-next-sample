@@ -33,7 +33,6 @@ const Users = () => {
     if (userId) {
       (async () => {
         let response = await getAccounts(localStorage.getItem("PHYLLO_USER_ID"));
-        debugger;
         let arr = response;
         if (arr.length > 0) {
           let updatedArray = arr.map((obj) => {
