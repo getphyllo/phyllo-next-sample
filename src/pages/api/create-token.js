@@ -1,6 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 const PHYLLO_CREATE_TOKEN_URL = "https://api.sandbox.getphyllo.com/v1/sdk-tokens";
 
+// Kindly create an env file and pass your crendentials from there.
 const PHYLLO_CLIENT_ID = process.env.PHYLLO_CLIENT_ID;
 const PHYLLO_SECRET_ID = process.env.PHYLLO_SECRET_ID;
 

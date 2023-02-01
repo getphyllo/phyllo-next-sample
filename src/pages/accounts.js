@@ -29,18 +29,22 @@ const Users = () => {
   };
 
   useEffect(() => {
-    (async () => {
-      let response = await getAccounts(localStorage.getItem("PHYLLO_USER_ID"));
-      let arr = response;
-      if (arr.length > 0) {
-        let updatedArray = arr.map((obj) => {
-          let flattenedObj = flattenObj(obj);
-          return flattenedObj;
-        });
-        setAccounts(updatedArray);
-        setAttributes(updatedArray[0]);
-      }
-    })();
+    const userId = localStorage.getItem("PHYLLO_USER_ID");
+    if (userId) {
+      (async () => {
+        let response = await getAccounts(localStorage.getItem("PHYLLO_USER_ID"));
+        debugger;
+        let arr = response;
+        if (arr.length > 0) {
+          let updatedArray = arr.map((obj) => {
+            let flattenedObj = flattenObj(obj);
+            return flattenedObj;
+          });
+          setAccounts(updatedArray);
+          setAttributes(updatedArray[0]);
+        }
+      })();
+    }
   }, []);
 
   return (
