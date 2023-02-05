@@ -4,5 +4,7 @@
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
   "/accounts": "pages/accounts.js",
-  "/api/get-accounts": "pages/api/get-accounts.js"
+  "/api/get-accounts": "pages/api/get-accounts.js",
+  "/api/create-token": "pages/api/create-token.js",
+  "/api/create-user": "pages/api/create-user.js"
 }
