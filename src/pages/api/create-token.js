@@ -2,8 +2,8 @@
 const PHYLLO_CREATE_TOKEN_URL = "https://api.sandbox.getphyllo.com/v1/sdk-tokens";
 
 // Kindly create an env file and pass your crendentials from there.
-const PHYLLO_CLIENT_ID = process.env.PHYLLO_CLIENT_ID;
-const PHYLLO_SECRET_ID = process.env.PHYLLO_SECRET_ID;
+const PHYLLO_CLIENT_ID = process.env.NEXT_PUBLIC_PHYLLO_CLIENT_ID;
+const PHYLLO_SECRET_ID = process.env.NEXT_PUBLIC_PHYLLO_SECRET_ID;
 
 export default async function handler(req, res) {
   let headers = new Headers();
